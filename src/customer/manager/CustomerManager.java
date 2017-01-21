@@ -19,12 +19,14 @@ public class CustomerManager extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("MainFXMLDocument.fxml"));
-        
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("MainFXMLDocument.fxml"));
+        Parent root = loader.load();
+        MainFXMLDocumentController myController = loader.getController();
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
         stage.show();
+        myController.load();
     }
 
     /**
