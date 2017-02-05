@@ -26,7 +26,6 @@ import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
  
 public class QRCode {
  
-	// Tutorial: http://zxing.github.io/zxing/apidocs/index.html
  
 	public static void main(String[] args) {
 		String myCodeText = "Mathew Cross, 01/14/2017, Free Pizza, 21pts";

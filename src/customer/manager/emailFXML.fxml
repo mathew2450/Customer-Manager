@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customer.manager.EmailFXMLController">
+   <children>
+      <TextArea fx:id="emailBody" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="363.0" />
+      <ImageView fx:id="headerPic" fitHeight="150.0" fitWidth="200.0" layoutX="386.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/logo.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="chooseTop" layoutX="455.0" layoutY="164.0" mnemonicParsing="false" text="Header" />
+      <Button fx:id="saveBtn" layoutX="127.0" layoutY="226.0" mnemonicParsing="false" text="Save Email format" />
+      <Button fx:id="textChoice" layoutX="144.0" layoutY="263.0" mnemonicParsing="false" text="Choose Email" />
+      <ImageView fx:id="footerPic" fitHeight="150.0" fitWidth="200.0" layoutX="388.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true" />
+      <Button  fx:id="chooseBot" layoutX="456.0" layoutY="360.0" mnemonicParsing="false" text="Footer" />
+   </children>
+</AnchorPane>

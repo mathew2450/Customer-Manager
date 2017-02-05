@@ -23,10 +23,10 @@ public class CustomerManager extends Application {
         Parent root = loader.load();
         MainFXMLDocumentController myController = loader.getController();
         Scene scene = new Scene(root);
-        
+        myController.load();
         stage.setScene(scene);
         stage.show();
-        myController.load();
+        
     }
 
     /**
